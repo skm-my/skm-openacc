@@ -1,0 +1,314 @@
+ 
+	
+<div class="slider-container">
+     
+  <div class="slide fade">
+    <img class="slide-image" src="https://www.dropbox.com/scl/fi/x7zxlh7yxjrcta45f6ddi/unnamed.jpg?rlkey=yz0xyjumy6tli1f2u6l39ydvo&raw=1">
+    <div class="slide-content">
+        <a class="header__link" href="https://skmm789.carrd.co/" target="_blank"><img class="header__image" src="https://i.ibb.co/7znjnbB/300634390-102353879270271-1209415580489970454-n-removebg-preview.png" alt="CSS Weekly"  width="130" height="130"/></a>
+        </br>
+      <h3 class="slide-title">မြန်မာပြည်ရဲ့စိတ်ချရဆုံး ရှမ်းကိုးမီး</h3>
+      <p class="slide-desc">
+       
+      </p>
+      <a href="https://skmm789.carrd.co/" class="slide-btn">
+       ဂိမ်းအကောင့်ဖွင့်ရန် <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">01</p>
+      <hr>
+      <p class="slider-number">03</p>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img class="slide-image" src="https://www.dropbox.com/scl/fi/klhvxg3y3fq76qtz9tkz5/Lucky-Fishing-68.png?rlkey=xe53s2k75gkeov7zmah9dkhxh&raw=1">
+    <div class="slide-content">
+         <a class="header__link" href="https://skmm789.carrd.co/" target="_blank"><img class="header__image" src="https://i.ibb.co/7znjnbB/300634390-102353879270271-1209415580489970454-n-removebg-preview.png" alt="CSS Weekly"  width="130" height="130"/></a>
+        </br>
+      <h3 class="slide-title">မြန်မာပြည်ရဲ့စိတ်ချရဆုံး ရှမ်းကိုးမီး</h3>
+      <p class="slide-desc">
+     
+      </p>
+      <a href="https://skmm789.carrd.co/" class="slide-btn">
+      မန်ဘာသစ် ဘောနပ်များရယူရန်<ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">02</p>
+      <hr>
+      <p class="slider-number">03</p>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img class="slide-image" src="https://www.dropbox.com/scl/fi/wq35kvtrfrs1ocrtmr7b4/353677490_298883589130848_446638179231424045_n-1.png?rlkey=ipvwvh3rb951c8hzqxepr32p3&raw=1">
+    <div class="slide-content">
+         <a class="header__link" href="https://skmm789.carrd.co/" target="_blank"><img class="header__image" src="https://i.ibb.co/7znjnbB/300634390-102353879270271-1209415580489970454-n-removebg-preview.png" alt="CSS Weekly"  width="130" height="130"/></a>
+        </br>
+      <h3 class="slide-title">မြန်မာပြည်ရဲ့စိတ်ချရဆုံး ရှမ်းကိုးမီး</h3>
+      <p class="slide-desc">
+
+      </p>
+      <a href="https://skmm789.carrd.co/" class="slide-btn">
+      ကစားပြီး အနိုင်ငွေများ ထုတ်ယူလိုက်ပါ <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">03</p>
+      <hr>
+      <p class="slider-number">03</p>
+    </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class="slider-nav">
+    <a class="slider-nav-btn" onclick="plusSlides(-1)">
+      <ion-icon name="caret-back-outline"></ion-icon>
+    </a>
+    <a class="slider-nav-btn" onclick="plusSlides(1)">
+      <ion-icon name="caret-forward-outline"></ion-icon>
+    </a>
+  </div>
+
+  <!-- The dots/circles -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+.slide-title {
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.slide-desc {
+  width: 100%;
+  max-width: 50rem;
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.slide-btn {
+  color: black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  transition: ease 0.3s;
+}
+.slide-btn:hover {
+  gap: 1rem;
+}
+
+.slide-number-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 5;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: rgba(211, 211, 211, 0.788);
+  letter-spacing: 0.2rem;
+}
+.slide-number-container hr {
+  width: 3rem;
+  transform: rotate(130deg);
+  border-color: rgba(211, 211, 211, 0.788);
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.slider-nav-btn {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.226);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+}
+.slider-nav-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.dot-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: rgba(211, 211, 211, 0.226);
+  border-radius: 50%;
+  display: inline-block;
+  transition: ease 0.3s;
+}
+.active,
+.dot:hover {
+  background-color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.header__image {
+	display: block;
+	margin: auto;
+	max-inline-size: 100%;
+}
+
+
+
+
+</style>
+
+<script>
+
+let slideIndex = 1;
+const slides = document.getElementsByClassName("slide");
+const dots = document.getElementsByClassName("dot");
+
+// Function to show a specific slide
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Remove the "active" class from all dots
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Display the current slide and mark its corresponding dot as active
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+// Function to advance to the next slide
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Function to navigate to a specific slide
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+// Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+setInterval(function () {
+  plusSlides(1);
+}, 5000);
+
+// Initialize the slider
+showSlides(slideIndex);
+
+</script>
+
+
